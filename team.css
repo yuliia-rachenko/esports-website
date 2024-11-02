@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #ffffff; /* White background for cleanliness */
+}
+
+.team-details {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-name {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ff6600; /* Team color */
+}
+
+.team-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 200px;
+}
+
+.team-description {
+  margin-bottom: 40px;
+}
+
+.team-roster {
+  margin-bottom: 40px;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #f9f9f9; /* Light background for player cards */
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s; /* Animation on hover */
+}
+
+.player-card:hover {
+  transform: scale(1.05); /* Slightly zoom on hover */
+}
+
+.player-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circle photo */
+}
+
+.achievements-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.achievement-img {
+  width: 50px; /* Control trophy image size */
+  height: auto;
+}
+
+.social-media a {
+  margin-right: 10px; /* Space between links */
+  color: #ff6600; /* Match team color */
+}
+
+.back-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6600; /* Team color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
