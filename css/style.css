@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -156,90 +160,6 @@ body {
 
 .cta-button:hover {
   background-color: #cc5200;
-}
-
-/* Footer */
-.footer {
-  background-color: #111;
-  color: white;
-  padding: 40px 20px;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-.footer-section h3,
-.footer-section h4 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.footer-section p {
-  font-size: 14px;
-  color: #bbb;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.social-icons li {
-  list-style: none;
-}
-
-.social-icons li a img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  background-color: #222;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.footer-bottom p {
-  margin: 0;
-  color: #bbb;
-}
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-section {
-    margin-bottom: 20px;
-  }
 }
 
 /* Tournaments Section */
@@ -418,6 +338,78 @@ body {
   background-color: #cc5200;
 }
 
+/* Footer */
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons li a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #bbb;
+}
+
 @media (max-width: 480px) {
   .hero-slogan {
     font-size: 28px;
@@ -475,5 +467,14 @@ body {
   .team-logo {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
   }
 }
