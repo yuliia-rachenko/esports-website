@@ -17,7 +17,7 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="logo">
-          <a href="#">
+          <a href="#" aria-label="Home">
             <img
               src="images/LogoGamer.png"
               alt="Website Logo"
@@ -26,7 +26,7 @@
           </a>
         </div>
         <!-- Navigation Menu -->
-        <nav class="nav-menu">
+        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="#tournaments">Tournaments</a></li>
@@ -39,7 +39,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" role="region" aria-labelledby="hero-title">
       <div class="hero-container">
         <!-- Slogan -->
         <h1 class="hero-slogan">
@@ -52,7 +52,7 @@
         </div>
 
         <!-- Statistics -->
-        <div class="hero-stats">
+        <div class="hero-stats" aria-label="Tournament statistics">
           <div class="stat">
             <h2>100+</h2>
             <p>Teams</p>
@@ -75,7 +75,11 @@
 
     <!-- Tournaments Section -->
     <a name="tournaments"></a>
-    <section class="tournaments-section">
+    <section
+      class="tournaments-section"
+      role="region"
+      aria-labelledby="tournaments-title"
+    >
       <div class="container">
         <h2 class="section-title">Featured Tournaments</h2>
         <p class="section-description">
@@ -94,7 +98,10 @@
             <h3 class="tournament-title">ESWC 2024</h3>
             <p class="tournament-date">12-15 June 2024</p>
             <p class="tournament-location">Paris, France</p>
-            <a href="./tournament-details.html" class="learn-more-button"
+            <a
+              href="./tournament-details.html"
+              class="learn-more-button"
+              aria-label="Learn more about World Championship"
               >Learn More</a
             >
           </div>
@@ -109,7 +116,10 @@
             <h3 class="tournament-title">World Championship</h3>
             <p class="tournament-date">25-27 July 2024</p>
             <p class="tournament-location">New York, USA</p>
-            <a href="./tournament-details.html" class="learn-more-button"
+            <a
+              href="./tournament-details.html"
+              class="learn-more-button"
+              aria-label="Learn more about World Championship"
               >Learn More</a
             >
           </div>
@@ -124,7 +134,10 @@
             <h3 class="tournament-title">Summer Showdown</h3>
             <p class="tournament-date">8-10 August 2024</p>
             <p class="tournament-location">Seoul, South Korea</p>
-            <a href="./tournament-details.html" class="learn-more-button"
+            <a
+              href="./tournament-details.html"
+              class="learn-more-button"
+              aria-label="Learn more about Summer Showdown"
               >Learn More</a
             >
           </div>
@@ -134,7 +147,7 @@
 
     <!-- Teams Section -->
     <a name="teams"></a>
-    <section class="teams-section">
+    <section class="teams-section" role="region" aria-labelledby="teams-title">
       <div class="teams-banner">
         <h2 class="section-title">Top Esports Teams</h2>
         <p class="section-description">
@@ -143,7 +156,11 @@
         </p>
       </div>
 
-      <div class="teams-carousel">
+      <div
+        class="teams-carousel"
+        role="list"
+        aria-label="Carousel of top esports teams"
+      >
         <!-- Team Card 1 -->
         <div class="team-card">
           <img src="images/team1.jpg" alt="Team 1 Logo" class="team-logo" />
@@ -228,7 +245,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
-          <h3>Esports World Cup</h3>
+          <h3>Galactic Gamer Club</h3>
           <p>The best esports events and tournaments.</p>
         </div>
 
@@ -266,7 +283,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2024 Esports World Cup. All rights reserved.</p>
+        <p>&copy; 2024 Galactic Gamer Club. All rights reserved.</p>
       </div>
     </footer>
   </body>

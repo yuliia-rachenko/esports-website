@@ -20,7 +20,7 @@
       <div class="header-container">
         <!-- Logo -->
         <div class="logo">
-          <a href="#">
+          <a href="#" aria-label="Home">
             <img
               src="images/LogoGamer.png"
               alt="Website Logo"
@@ -29,7 +29,7 @@
           </a>
         </div>
         <!-- Navigation Menu -->
-        <nav class="nav-menu">
+        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html#tournaments">Tournaments</a></li>
@@ -42,7 +42,11 @@
     </header>
 
     <!-- Tournament Details Section -->
-    <section class="tournament-details">
+    <section
+      class="tournament-details"
+      role="region"
+      aria-labelledby="tournament-title"
+    >
       <div class="tournament-container">
         <h1>World Championship 2024</h1>
         <p><strong>Date:</strong> March 20 - April 15, 2024</p>
@@ -75,7 +79,12 @@
           <a href="./images/rules.pdf" target="_blank">here</a>.
         </p>
 
-        <button class="register-btn">Register Now</button>
+        <button
+          class="register-btn"
+          aria-label="Register for the World Championship 2024"
+        >
+          Register Now
+        </button>
       </div>
     </section>
 
@@ -83,7 +92,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
-          <h3>Esports World Cup</h3>
+          <h3>Galactic Gamer Club</h3>
           <p>The best esports events and tournaments.</p>
         </div>
 
@@ -121,7 +130,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2024 Esports World Cup. All rights reserved.</p>
+        <p>&copy; 2024 Galactic Gamer Club. All rights reserved.</p>
       </div>
     </footer>
   </body>
